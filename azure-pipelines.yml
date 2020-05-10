@@ -20,4 +20,5 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'custom'
-    custom: 'dotnet tool install fornax -g'
+    custom: 'tool'
+    arguments: 'install fornax -g'
