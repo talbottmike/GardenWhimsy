@@ -22,3 +22,13 @@ steps:
     command: 'custom'
     custom: 'tool'
     arguments: 'install fornax -g'
+
+- task: CmdLine@2
+  inputs:
+    script: 'fornax builld'
+    
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'custom'
+    custom: 'fornax'
+    arguments: 'build'
