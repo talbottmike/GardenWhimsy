@@ -1,2 +1,2 @@
 # GardenWhimsy
-GardenWhimsy site
+Garden Whimsy site
