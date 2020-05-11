@@ -23,6 +23,13 @@ steps:
     custom: 'tool'
     arguments: 'install fornax -g'
 
-- task: CmdLine@2
+# - task: CmdLine@2
+#   inputs:
+#     script: 'fornax build'
+
+- task: deploy@1
   inputs:
-    script: 'fornax build'
+    authToken: '435ab106fcbf1c20045ca13441cd629d479bd230ade28dbb95f8d5f0c19a2dc6'
+    siteId: '94697b9a-e3cf-4d78-a63d-800d3f697c4c'
+    sourceDirectory: '$(System.DefaultWorkingDirectory)/_public'
+    isValidationOnly: false
