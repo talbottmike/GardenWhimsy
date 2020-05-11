@@ -13,6 +13,13 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo dir
+      echo ls
+      ls
+      
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
